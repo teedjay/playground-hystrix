@@ -24,7 +24,7 @@ public class CommandFirstSteps extends HystrixCommand<String> {
         super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"))
                 .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
                         .withExecutionIsolationThreadTimeoutInMilliseconds(timeout)));
-        System.out.println("Using timout " + timeout);
+        // System.out.println("Using timout " + timeout);
         this.name = name;
         this.timeout = timeout;
     }
